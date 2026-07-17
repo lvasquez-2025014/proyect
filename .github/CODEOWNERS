@@ -1,0 +1,27 @@
+# Code Owners
+
+# Default owners for everything
+* @asm
+
+# Backend module ownership
+/services/backend/src/main/java/com/luxury/inventory/ @asm
+/services/backend/src/main/java/com/luxury/sales/ @asm
+/services/backend/src/main/java/com/luxury/crm/ @asm
+/services/backend/src/main/java/com/luxury/billing/ @asm
+/services/backend/src/main/java/com/luxury/hr/ @asm
+/services/backend/src/main/java/com/luxury/purchasing/ @asm
+/services/backend/src/main/java/com/luxury/ai/ @asm
+
+# Frontend module ownership
+/apps/web/app/dashboard/inventory/ @asm
+/apps/web/app/dashboard/sales/ @asm
+/apps/web/app/dashboard/crm/ @asm
+/apps/web/app/dashboard/billing/ @asm
+/apps/web/app/dashboard/hr/ @asm
+
+# Documentation
+/docs/ @asm
+
+# Infrastructure
+/.github/ @asm
+/docker/ @asm
