@@ -4,6 +4,17 @@ server:
 spring:
   application:
     name: luxury-enterprises-api
+  datasource:
+    url: jdbc:postgresql://localhost:5432/luxury_enterprises
+    username: postgres
+    password: admin
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
 
 management:
   endpoints:
