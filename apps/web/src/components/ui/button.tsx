@@ -2,6 +2,7 @@ import { ButtonHTMLAttributes, forwardRef } from 'react';
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'ghost' | 'outline';
+  size?: 'sm' | 'md' | 'lg';
   loading?: boolean;
 }
 
@@ -15,17 +16,17 @@ const variantStyles = {
 
 const sizeStyles = {
   sm: 'px-4 py-2 text-xs',
-  md: 'px-6 py-3 text-sm',
+  md: 'px-6 py-[1.15rem] text-[0.9rem]',
   lg: 'px-8 py-4 text-base',
 };
 
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ variant = 'primary', loading, children, className = '', disabled, ...props }, ref) => {
+  ({ variant = 'primary', size = 'md', loading, children, className = '', disabled, ...props }, ref) => {
     return (
       <button
         ref={ref}
         disabled={disabled || loading}
-        className={`relative overflow-hidden rounded-md font-ui font-semibold uppercase tracking-[0.12em] transition-all duration-500 ${variantStyles[variant]} ${disabled ? 'opacity-50 cursor-not-allowed' : ''} ${className}`}
+        className={`relative overflow-hidden rounded-md font-ui font-semibold uppercase tracking-[0.12em] transition-all duration-500 ${variantStyles[variant]} ${sizeStyles[size]} ${disabled ? 'opacity-50 cursor-not-allowed' : ''} ${className}`}
         {...props}
       >
         {variant === 'primary' && (

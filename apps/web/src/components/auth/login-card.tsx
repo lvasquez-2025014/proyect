@@ -65,7 +65,7 @@ export function LoginCard({ children }: LoginCardProps) {
         <div className="relative z-[3]">
           <div className="text-center mb-11">
             <h2 className="text-[1.45rem] font-normal tracking-[0.15em] uppercase mb-2">Sign In</h2>
-            <p className="text-sm text-text-secondary font-light tracking-[0.04em]">
+            <p className="text-[0.85rem] text-text-secondary font-light tracking-[0.04em]">
               Access your MaisonOS environment
             </p>
           </div>

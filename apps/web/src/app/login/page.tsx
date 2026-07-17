@@ -9,7 +9,7 @@ export default function LoginPage() {
       <BackgroundEffects />
       <div className="flex w-full h-full z-[2] relative">
         <HeroSection />
-        <div className="flex-1 flex items-center justify-center p-8 lg:p-16">
+        <div className="flex-[0.9] flex items-center justify-center p-8 lg:p-16">
           <LoginCard>
             <LoginForm />
           </LoginCard>

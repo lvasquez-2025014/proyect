@@ -11,13 +11,13 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
         <input
           ref={ref}
           id={id}
-          className={`w-full bg-transparent border-b border-white/[0.15] pb-3 pt-1 text-sm text-text-primary outline-none transition-colors duration-500 focus:border-b-transparent peer ${className}`}
+          className={`w-full bg-transparent border-b border-white/[0.15] py-[0.9rem] text-[0.95rem] text-text-primary outline-none transition-colors duration-500 focus:border-b-transparent peer ${className}`}
           placeholder=" "
           {...props}
         />
         <label
           htmlFor={id}
-          className="absolute left-0 top-1/2 -translate-y-1/2 text-xs text-white/35 tracking-[0.08em] transition-all duration-500 peer-focus:-top-3 peer-focus:text-[0.7rem] peer-focus:text-accent peer-focus:tracking-[0.12em] peer-[:not(:placeholder-shown)]:-top-3 peer-[:not(:placeholder-shown)]:text-[0.7rem] peer-[:not(:placeholder-shown)]:text-accent"
+          className="absolute left-0 top-1/2 -translate-y-1/2 text-[0.85rem] text-white/35 tracking-[0.08em] transition-all duration-500 peer-focus:-top-3 peer-focus:text-[0.7rem] peer-focus:text-accent peer-focus:tracking-[0.12em] peer-[:not(:placeholder-shown)]:-top-3 peer-[:not(:placeholder-shown)]:text-[0.7rem] peer-[:not(:placeholder-shown)]:text-accent"
         >
           {label}
         </label>

@@ -1,6 +1,6 @@
 export function HeroSection() {
   return (
-    <div className="flex-1 hidden lg:flex flex-col justify-between px-8 md:px-16 lg:px-24 xl:px-32 py-24 relative overflow-hidden">
+    <div className="flex-[1.1] hidden lg:flex flex-col justify-between px-8 md:px-16 lg:px-32 py-24 relative overflow-hidden">
       <div className="flex items-center gap-5 opacity-0 animate-fade-in [animation-delay:0.4s]">
         <svg viewBox="0 0 100 100" className="w-8 h-8 fill-none stroke-accent stroke-[1.5]">
           <path d="M 20 80 L 20 30 L 50 60 L 80 30 L 80 80" strokeLinejoin="miter" />
@@ -16,7 +16,7 @@ export function HeroSection() {
           Technology crafted with the same precision{' '}
           <span className="block italic text-accent">as the world&apos;s greatest maisons.</span>
         </h1>
-        <p className="text-sm md:text-[0.95rem] leading-[1.85] text-text-secondary font-light tracking-[0.02em] opacity-0 animate-fade-in [animation-delay:0.8s]">
+        <p className="text-[0.95rem] leading-[1.85] text-text-secondary font-light tracking-[0.02em] opacity-0 animate-fade-in [animation-delay:0.8s]">
           We orchestrate ecosystems where timeless craftsmanship meets modern enterprise. Engineered for brands that define excellence.
         </p>
       </div>
