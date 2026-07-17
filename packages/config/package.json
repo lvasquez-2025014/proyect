@@ -1,0 +1,15 @@
+{
+  "name": "@luxury/config",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./eslint-preset.js",
+  "scripts": {
+    "lint": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  },
+  "peerDependencies": {
+    "eslint": "^8.0.0"
+  }
+}

@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/luxury_enterprises
+    username: luxury
+    password: luxury_dev
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
