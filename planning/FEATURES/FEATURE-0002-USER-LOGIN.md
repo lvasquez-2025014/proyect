@@ -1,24 +1,24 @@
-# FEATURE-0002: User Login
+# FEATURE-0002: Inicio de Sesión de Usuario
 
-**Status**: Pending
-**Priority**: Critical
-**Epic**: EPIC-001 (Authentication)
-**Estimate**: 2 days
+**Estado**: Pendiente
+**Prioridad**: Crítica
+**Épica**: EPIC-001 (Autenticación)
+**Estimación**: 2 días
 
-## Description
-Authenticate existing users with email + password.
+## Descripción
+Autenticar usuarios existentes con correo electrónico + contraseña.
 
-## Acceptance Criteria
-- [ ] Login form with email and password
-- [ ] JWT access token (15min) returned + refresh token (7d) in HTTP-only cookie
-- [ ] Error message for invalid credentials
-- [ ] Account lockout after 5 failed attempts (15 min cooldown)
-- [ ] "Remember me" extends refresh token to 30 days
-- [ ] Redirect to dashboard on success
-- [ ] Redirect to login when accessing protected routes without token
+## Criterios de Aprobación
+- [ ] Formulario de inicio de sesión con correo electrónico y contraseña
+- [ ] Token de acceso JWT (15min) devuelto + token de actualización (7 días) en una cookie HTTP-only
+- [ ] Mensaje de error para credenciales no válidas
+- [ ] Bloqueo de cuenta después de 5 intentos fallidos (15 min de enfriamiento)
+- [ ] "Recordarme" extiende el token de actualización a 30 días
+- [ ] Redirigir al panel de control en caso de éxito
+- [ ] Redirigir al inicio de sesión al acceder a rutas protegidas sin un token
 
 ## API
 POST /api/v1/auth/login
 
-## Notes
-Rate limit: 5 attempts per minute per IP.
+## Notas
+Límite de tasa: 5 intentos por minuto por IP.

@@ -1,40 +1,40 @@
-# EPIC-001: Authentication & Multi-tenant
+# EPIC-001: Autenticación y Multi-inquilino
 
-**Status**: Pending
-**Priority**: Critical
-**Dependencies**: None (foundation epic)
+**Estado**: Pendiente
+**Prioridad**: Crítica
+**Dependencias**: Ninguna (épica base)
 
-## Description
-Implement authentication system with JWT, multi-tenant isolation, role-based access control, and company onboarding.
+## Descripción
+Implementar el sistema de autenticación con JWT, aislamiento multi-inquilino, control de acceso basado en roles y registro de empresas.
 
-## Objectives
-- Users can register a new company and become admin
-- Users can log in with email + password
-- JWT access tokens (15min) + refresh tokens (7d)
-- Multi-tenant data isolation (company_id in all queries)
-- Role-based access control (RBAC) with 6 roles
-- Password reset flow
-- Account lockout after 5 failed attempts
+## Objetivos
+- Los usuarios pueden registrar una nueva empresa y convertirse en administradores
+- Los usuarios pueden iniciar sesión con correo electrónico + contraseña
+- Tokens de acceso JWT (15min) + tokens de actualización (7 días)
+- Aislamiento de datos multi-inquilino (company_id en todas las consultas)
+- Control de acceso basado en roles (RBAC) con 6 roles
+- Flujo de restablecimiento de contraseña
+- Bloqueo de cuenta después de 5 intentos fallidos
 
-## Acceptance Criteria
-- [ ] POST /api/v1/auth/register creates company + admin user
-- [ ] POST /api/v1/auth/login returns JWT tokens
-- [ ] GET /api/v1/auth/me returns authenticated user profile
-- [ ] All endpoints return 401 without valid token
-- [ ] Users can only access data from their own company
-- [ ] Role permissions enforced on all mutating endpoints
-- [ ] Account locks after 5 failed login attempts
-- [ ] Password reset email sent and token expires after 1 hour
-- [ ] Refresh token rotation (old token invalidated on refresh)
-- [ ] Rate limiting: 5 login attempts/minute per IP
+## Criterios de Aprobación
+- [ ] POST /api/v1/auth/register crea la empresa + usuario administrador
+- [ ] POST /api/v1/auth/login devuelve los tokens JWT
+- [ ] GET /api/v1/auth/me devuelve el perfil del usuario autenticado
+- [ ] Todos los endpoints devuelven 401 sin un token válido
+- [ ] Los usuarios solo pueden acceder a los datos de su propia empresa
+- [ ] Permisos de roles aplicados en todos los endpoints de mutación
+- [ ] La cuenta se bloquea después de 5 intentos fallidos de inicio de sesión
+- [ ] Correo electrónico de restablecimiento de contraseña enviado y el token expira después de 1 hora
+- [ ] Rotación del token de actualización (el token antiguo se invalida al actualizar)
+- [ ] Límite de tasa: 5 intentos de inicio de sesión por minuto por IP
 
-## Technical Notes
-- JWT with RS256 (asymmetric keys)
-- Hibernate @TenantId or Spring Filter for multi-tenant
-- BCrypt for password hashing (cost factor 12)
+## Notas Técnicas
+- JWT con RS256 (claves asimétricas)
+- Hibernate @TenantId o Spring Filter para multi-inquilino
+- BCrypt para el hash de contraseñas (factor de costo 12)
 
-## Epic Dependencies
-None (foundation layer)
+## Dependencias de la Épica
+Ninguna (capa base)
 
-## Estimated Effort
+## Esfuerzo Estimado
 2-3 sprints

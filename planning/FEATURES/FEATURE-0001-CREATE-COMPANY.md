@@ -1,28 +1,28 @@
-# FEATURE-0001: Create Company (Onboarding)
+# FEATURE-0001: Crear Empresa (Onboarding)
 
-**Status**: Pending
-**Priority**: Critical
-**Epic**: EPIC-001 (Authentication)
-**Estimate**: 3 days
+**Estado**: Pendiente
+**Prioridad**: Crítica
+**Épica**: EPIC-001 (Autenticación)
+**Estimación**: 3 días
 
-## Description
-First-time user flow: register a new company and become its admin.
+## Descripción
+Flujo de usuario por primera vez: registrar una nueva empresa y convertirse en su administrador.
 
-## Acceptance Criteria
-- [ ] Registration form: company name, admin email, password, admin name
-- [ ] Company created with default settings (USD, UTC, English)
-- [ ] Admin user created with role ADMIN
-- [ ] Default branch created (Main Office)
-- [ ] Default warehouse created under main branch
-- [ ] Welcome email sent
-- [ ] User automatically logged in after registration
-- [ ] Duplicate email rejected
+## Criterios de Aprobación
+- [ ] Formulario de registro: nombre de la empresa, correo del administrador, contraseña, nombre del administrador
+- [ ] Empresa creada con la configuración predeterminada (USD, UTC, Inglés)
+- [ ] Usuario administrador creado con rol ADMIN
+- [ ] Sucursal predeterminada creada (Oficina Principal)
+- [ ] Almacén predeterminado creado bajo la sucursal principal
+- [ ] Correo electrónico de bienvenida enviado
+- [ ] Usuario automáticamente inicia sesión después del registro
+- [ ] Correo electrónico duplicado rechazado
 
-## Validation Rules
-- Company name: required, 2-255 chars
-- Email: valid format, unique
-- Password: min 8 chars, 1 uppercase, 1 number
-- Admin name: required, 2-100 chars
+## Reglas de Validación
+- Nombre de la empresa: obligatorio, 2-255 caracteres
+- Correo electrónico: formato válido, único
+- Contraseña: mín. 8 caracteres, 1 mayúscula, 1 número
+- Nombre del administrador: obligatorio, 2-100 caracteres
 
-## Notes
-This is the first feature a user interacts with. Must be polished.
+## Notas
+Esta es la primera característica con la que interactúa un usuario. Debe estar bien pulida.

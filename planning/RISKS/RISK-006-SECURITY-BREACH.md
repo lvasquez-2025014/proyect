@@ -1,28 +1,28 @@
-# RISK-006: Security Breach
+# RISK-006: Brecha de Seguridad
 
-**Status**: Active
-**Probability**: Low
-**Impact**: Critical
-**Category**: Security
+**Estado**: Activo
+**Probabilidad**: Baja
+**Impacto**: Crítico
+**Categoría**: Seguridad
 
-## Description
-JWT compromise, SQL injection, XSS, or data exposure could expose customer data.
+## Descripción
+El compromiso de JWT, inyección SQL, XSS o exposición de datos podrían exponer los datos de los clientes.
 
-## Mitigation
-- JWT with RS256 (asymmetric keys) — refresh tokens rotated
-- All inputs validated (@Valid, never trust client)
-- Parameterized queries only (no SQL concatenation)
-- CSP headers + React auto-escaping (XSS prevention)
-- CORS restricted to known origins
-- Rate limiting on all endpoints
-- Audit log tracks all data access (detection)
-- Secrets never in repository (environment variables)
-- Regular dependency scanning (Dependabot)
-- Penetration testing before v1.0
+## Mitigación
+- JWT con RS256 (claves asimétricas) — los tokens de actualización se rotan
+- Todas las entradas validadas (@Valid, nunca confiar en el cliente)
+- Solo consultas parametrizadas (sin concatenación SQL)
+- Encabezados CSP + auto-escape de React (prevención de XSS)
+- CORS restringido a orígenes conocidos
+- Límite de tasa (rate limiting) en todos los endpoints
+- El registro de auditoría rastrea todos los accesos a datos (detección)
+- Los secretos nunca están en el repositorio (variables de entorno)
+- Escaneo regular de dependencias (Dependabot)
+- Pruebas de penetración antes de v1.0
 
-## Contingency
-If breach occurs:
-1. Revoke all tokens immediately
-2. Identify entry point and close it
-3. Notify affected users (per GDPR)
-4. Full security audit
+## Contingencia
+Si ocurre una brecha:
+1. Revocar todos los tokens inmediatamente
+2. Identificar el punto de entrada y cerrarlo
+3. Notificar a los usuarios afectados (según el GDPR)
+4. Auditoría de seguridad completa

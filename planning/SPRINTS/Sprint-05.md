@@ -1,24 +1,24 @@
-# Sprint 05 — Billing
+# Sprint 05 — Facturación
 
 **Período**: Semana 9-10  
-**Objetivo**: Invoicing + payments + credit notes
+**Objetivo**: Facturación + pagos + notas de crédito
 
 ## Tareas
-- [ ] Invoice generation (from order + manual)
-- [ ] Invoice status machine
-- [ ] Payment recording (full + partial)
-- [ ] Credit notes
-- [ ] Tax calculation per line
-- [ ] Invoice PDF generation
-- [ ] Invoice list + detail UI
-- [ ] Payment recording UI
-- [ ] Overdue detection logic
+- [ ] Generación de facturas (desde pedido + manual)
+- [ ] Máquina de estado de la factura
+- [ ] Registro de pagos (total + parcial)
+- [ ] Notas de crédito
+- [ ] Cálculo de impuestos por línea
+- [ ] Generación de PDF de la factura
+- [ ] Interfaz de lista y detalle de facturas
+- [ ] Interfaz de registro de pagos
+- [ ] Lógica de detección de pagos atrasados
 
-## Dependencies
+## Dependencias
 Sprint 04
 
-## Definition of Done
-- [ ] Invoice ↔ Order event flow
-- [ ] PDF generation working
-- [ ] Payment reconciliation
-- [ ] Overdue notifications wired
+## Definición de Terminado
+- [ ] Flujo de eventos Factura ↔ Pedido
+- [ ] Generación de PDF funcionando
+- [ ] Reconciliación de pagos
+- [ ] Notificaciones de atrasos integradas

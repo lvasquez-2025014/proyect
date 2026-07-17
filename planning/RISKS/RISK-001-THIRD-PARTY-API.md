@@ -1,23 +1,23 @@
-# RISK-001: Third-party API Changes
+# RISK-001: Cambios en APIs de Terceros
 
-**Status**: Active
-**Probability**: Medium
-**Impact**: High
-**Category**: Integration
+**Estado**: Activo
+**Probabilidad**: Media
+**Impacto**: Alto
+**Categoría**: Integración
 
-## Description
-Third-party APIs (WhatsApp, Instagram, Facebook, Stripe) may change their APIs, deprecate endpoints, or modify authentication requirements.
+## Descripción
+Las APIs de terceros (WhatsApp, Instagram, Facebook, Stripe) pueden cambiar sus interfaces, desaprobar endpoints o modificar los requisitos de autenticación.
 
-## Mitigation
-- Wrap all third-party integrations behind an abstraction (port/adapter pattern)
-- Never call third-party APIs directly from domain or application layers
-- Use integration-specific modules that can be updated independently
-- Monitor provider changelogs and deprecation notices
-- Version-lock API clients in dependencies
+## Mitigación
+- Envolver todas las integraciones de terceros detrás de una abstracción (patrón puerto/adaptador)
+- Nunca llamar a APIs de terceros directamente desde las capas de dominio o aplicación
+- Utilizar módulos específicos de integración que se puedan actualizar de forma independiente
+- Monitorear los registros de cambios de los proveedores y los avisos de desaprobación
+- Bloquear las versiones de los clientes API en las dependencias
 
-## Contingency
-If an integration breaks:
-1. Identify the breaking change in provider docs
-2. Update the integration adapter (isolated change)
-3. Run integration tests
-4. Deploy without touching core modules
+## Contingencia
+Si una integración falla:
+1. Identificar el cambio disruptivo (breaking change) en la documentación del proveedor
+2. Actualizar el adaptador de integración (cambio aislado)
+3. Ejecutar pruebas de integración
+4. Desplegar sin tocar los módulos principales

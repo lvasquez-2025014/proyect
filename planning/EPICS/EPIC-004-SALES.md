@@ -1,35 +1,35 @@
-# EPIC-004: Sales & Order Management
+# EPIC-004: Gestión de Ventas y Pedidos
 
-**Status**: Pending
-**Priority**: High
-**Dependencies**: EPIC-001, EPIC-002 (Inventory)
+**Estado**: Pendiente
+**Prioridad**: Alta
+**Dependencias**: EPIC-001, EPIC-002 (Inventario)
 
-## Description
-Complete sales cycle: quotes, orders, fulfillment, returns. Integrates with Inventory for stock reservation and CRM for customer history.
+## Descripción
+Ciclo de ventas completo: presupuestos, pedidos, cumplimiento, devoluciones. Se integra con Inventario para la reserva de stock y con CRM para el historial del cliente.
 
-## Objectives
-- Quote creation and conversion to orders
-- Full order lifecycle (draft → confirmed → shipped → delivered)
-- Stock reservation on order confirmation
-- Discount management with approval workflows
-- Order status tracking
-- Returns and credit notes
+## Objetivos
+- Creación de presupuestos y conversión a pedidos
+- Ciclo de vida completo del pedido (borrador → confirmado → enviado → entregado)
+- Reserva de stock al confirmar el pedido
+- Gestión de descuentos con flujos de aprobación
+- Seguimiento del estado del pedido
+- Devoluciones y notas de crédito
 
-## Acceptance Criteria
-- [ ] Create quotes with products, quantities, prices
-- [ ] Convert quote to order (draft)
-- [ ] Create orders directly
-- [ ] Confirm order → reserve stock in Inventory
-- [ ] Process partial shipments
-- [ ] Cancel order → release stock in Inventory
-- [ ] Apply per-line and per-order discounts
-- [ ] Discounts above threshold require manager approval
-- [ ] Returns create credit notes
-- [ ] Order status visible in real-time
-- [ ] Domain events published: OrderCreated, OrderConfirmed, OrderShipped, OrderDelivered, OrderCancelled
+## Criterios de Aprobación
+- [ ] Crear presupuestos con productos, cantidades, precios
+- [ ] Convertir presupuesto en pedido (borrador)
+- [ ] Crear pedidos directamente
+- [ ] Confirmar pedido → reservar stock en el Inventario
+- [ ] Procesar envíos parciales
+- [ ] Cancelar pedido → liberar stock en el Inventario
+- [ ] Aplicar descuentos por línea y por pedido
+- [ ] Los descuentos por encima del umbral requieren la aprobación del gerente
+- [ ] Las devoluciones crean notas de crédito
+- [ ] Estado del pedido visible en tiempo real
+- [ ] Eventos de dominio publicados: OrderCreated, OrderConfirmed, OrderShipped, OrderDelivered, OrderCancelled
 
-## Epic Dependencies
+## Dependencias de la Épica
 EPIC-001, EPIC-002
 
-## Estimated Effort
+## Esfuerzo Estimado
 3-4 sprints

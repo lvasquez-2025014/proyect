@@ -1,26 +1,26 @@
-# Milestones
+# Hitos
 
-| Milestone | Target Date | Deliverable | Dependencies |
+| Hito | Fecha Objetivo | Entregable | Dependencias |
 |-----------|-------------|-------------|-------------|
-| M1: Auth Complete | Week 2 | Login, register, JWT, multi-tenant, RBAC | — |
-| M2: Inventory Complete | Week 6 | Products, stock, movements, search | M1 |
-| M3: CRM Complete | Week 8 | Contacts, interactions, VIP profiles | M1 |
-| M4: Sales Complete | Week 10 | Orders, quotes, order lifecycle, stock events | M2, M3 |
-| M5: Billing Complete | Week 12 | Invoices, payments, credit notes, PDF | M4 |
-| M6: MVP Release | Week 12 | v0.1 release | M1-M5 |
-| M7: v0.2 Release | Q4 2026 | Full core business | M6 |
-| M8: v0.3 Release | Q1 2027 | Advanced features | M7 |
-| M9: v1.0 Release | Q2 2027 | Production ready | M8 |
+| M1: Autenticación Completa | Semana 2 | Login, registro, JWT, multi-inquilino, RBAC | — |
+| M2: Inventario Completo | Semana 6 | Productos, stock, movimientos, búsqueda | M1 |
+| M3: CRM Completo | Semana 8 | Contactos, interacciones, perfiles VIP | M1 |
+| M4: Ventas Completas | Semana 10 | Pedidos, presupuestos, ciclo de vida del pedido, eventos de stock | M2, M3 |
+| M5: Facturación Completa | Semana 12 | Facturas, pagos, notas de crédito, PDF | M4 |
+| M6: Lanzamiento MVP | Semana 12 | Lanzamiento v0.1 | M1-M5 |
+| M7: Lanzamiento v0.2 | Q4 2026 | Núcleo completo del negocio | M6 |
+| M8: Lanzamiento v0.3 | Q1 2027 | Características avanzadas | M7 |
+| M9: Lanzamiento v1.0 | Q2 2027 | Listo para producción | M8 |
 
-## Tracking
-Each milestone has a GitHub Milestone with associated issues.
+## Seguimiento
+Cada hito tiene un Hito de GitHub con los problemas (issues) asociados.
 
-## Gate Criteria for M6 (MVP Release)
-- [ ] All core CRUD operations working
-- [ ] Authentication and authorization tested
-- [ ] Multi-tenant isolation verified
-- [ ] Stock movements auditable
-- [ ] Basic UI functional (not just API)
-- [ ] CI pipeline passing
-- [ ] Docker Compose setup working
-- [ ] Backup strategy documented
+## Criterios de Aprobación para M6 (Lanzamiento MVP)
+- [ ] Todas las operaciones CRUD principales funcionan
+- [ ] Autenticación y autorización probadas
+- [ ] Aislamiento multi-inquilino verificado
+- [ ] Movimientos de stock auditables
+- [ ] Interfaz de usuario básica funcional (no solo API)
+- [ ] Pipeline CI pasando correctamente
+- [ ] Configuración de Docker Compose funcionando
+- [ ] Estrategia de respaldo documentada

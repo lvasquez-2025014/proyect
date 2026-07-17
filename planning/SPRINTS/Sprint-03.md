@@ -1,25 +1,25 @@
-# Sprint 03 — Stock & CRM
+# Sprint 03 — Stock y CRM
 
 **Período**: Semana 5-6  
-**Objetivo**: Stock management + CRM basics
+**Objetivo**: Gestión de stock + fundamentos de CRM
 
 ## Tareas
-- [ ] Warehouses CRUD
-- [ ] Stock tracking (per product+variant+warehouse)
-- [ ] Stock movements (inbound, outbound, adjustment, transfer)
-- [ ] Stock history view
-- [ ] Low stock calculation
-- [ ] Contacts CRUD (individual + organization)
-- [ ] Addresses management
-- [ ] Contact search
-- [ ] Stock UI (by warehouse table, movements timeline)
-- [ ] Contacts list + detail UI
+- [ ] CRUD de Almacenes
+- [ ] Seguimiento de stock (por producto+variante+almacén)
+- [ ] Movimientos de stock (entrada, salida, ajuste, transferencia)
+- [ ] Vista del historial de stock
+- [ ] Cálculo de stock bajo
+- [ ] CRUD de Contactos (individuo + organización)
+- [ ] Gestión de direcciones
+- [ ] Búsqueda de contactos
+- [ ] Interfaz de Stock (tabla por almacén, línea de tiempo de movimientos)
+- [ ] Interfaz de lista y detalle de contactos
 
-## Dependencies
+## Dependencias
 Sprint 02
 
-## Definition of Done
-- [ ] Stock available = quantity - reserved (generated column)
-- [ ] Movements append-only
-- [ ] Contacts with VIP preferences
-- [ ] All endpoints tested
+## Definición de Terminado
+- [ ] Stock disponible = cantidad - reservado (columna generada)
+- [ ] Movimientos son de "solo añadir" (append-only)
+- [ ] Contactos con preferencias VIP
+- [ ] Todos los endpoints probados

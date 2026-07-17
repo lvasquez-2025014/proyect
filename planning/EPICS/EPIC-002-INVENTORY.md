@@ -1,43 +1,43 @@
-# EPIC-002: Inventory Management
+# EPIC-002: Gestión de Inventario
 
-**Status**: Pending
-**Priority**: Critical
-**Dependencies**: EPIC-001 (Authentication)
+**Estado**: Pendiente
+**Prioridad**: Crítica
+**Dependencias**: EPIC-001 (Autenticación)
 
-## Description
-Complete inventory module: products, categories, brands, variants, stock management, warehouses, and movements.
+## Descripción
+Módulo de inventario completo: productos, categorías, marcas, variantes, gestión de stock, almacenes y movimientos.
 
-## Objectives
-- Full product CRUD with rich attributes
-- Category tree (parent/child) and brand management
-- Product variants (size, color, material — unlimited attributes)
-- Multi-warehouse stock tracking
-- Stock movements with full audit trail
-- Lot and serial number tracking
-- Low stock alerts and reorder points
+## Objetivos
+- CRUD completo de productos con atributos ricos
+- Árbol de categorías (padre/hijo) y gestión de marcas
+- Variantes de productos (talla, color, material — atributos ilimitados)
+- Seguimiento de stock multi-almacén
+- Movimientos de stock con registro de auditoría completo
+- Seguimiento de lotes y números de serie
+- Alertas de stock bajo y puntos de reorden
 
-## Acceptance Criteria
-- [ ] Products CRUD with SKU, name, price, cost, tax, unit
-- [ ] Categories with hierarchical tree structure
-- [ ] Brands with logo and metadata
-- [ ] Variants with unlimited attribute combinations
-- [ ] Stock tracked per product+variant+warehouse+lot
-- [ ] Stock movements append-only (never deleted)
-- [ ] Stock adjustments with reason and audit
-- [ ] Stock transfers between warehouses
-- [ ] Lot tracking with expiry dates
-- [ ] Serial number tracking per item
-- [ ] Low stock alerts trigger at reorder point
-- [ ] Product search by SKU, name, barcode, category
+## Criterios de Aprobación
+- [ ] CRUD de productos con SKU, nombre, precio, costo, impuestos, unidad
+- [ ] Categorías con estructura de árbol jerárquica
+- [ ] Marcas con logotipo y metadatos
+- [ ] Variantes con combinaciones de atributos ilimitadas
+- [ ] Stock rastreado por producto+variante+almacén+lote
+- [ ] Movimientos de stock de solo adición (nunca se eliminan)
+- [ ] Ajustes de stock con motivo y auditoría
+- [ ] Transferencias de stock entre almacenes
+- [ ] Seguimiento de lotes con fechas de caducidad
+- [ ] Seguimiento de números de serie por artículo
+- [ ] Las alertas de stock bajo se activan en el punto de reorden
+- [ ] Búsqueda de productos por SKU, nombre, código de barras, categoría
 
-## Technical Notes
-- `available = quantity - reserved` as generated column
-- Full-text search with tsvector (Spanish)
-- JSONB for variant attributes
-- Unique SKU per company
+## Notas Técnicas
+- `available = quantity - reserved` como columna generada
+- Búsqueda de texto completo con tsvector (Español)
+- JSONB para los atributos de las variantes
+- SKU único por empresa
 
-## Epic Dependencies
+## Dependencias de la Épica
 EPIC-001
 
-## Estimated Effort
+## Esfuerzo Estimado
 3-4 sprints

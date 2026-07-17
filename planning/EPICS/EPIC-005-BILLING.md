@@ -1,34 +1,34 @@
-# EPIC-005: Billing & Payments
+# EPIC-005: Facturación y Pagos
 
-**Status**: Pending
-**Priority**: High
-**Dependencies**: EPIC-001, EPIC-004
+**Estado**: Pendiente
+**Prioridad**: Alta
+**Dependencias**: EPIC-001, EPIC-004
 
-## Description
-Invoicing, payment tracking, credit notes, and multi-jurisdiction tax management.
+## Descripción
+Facturación, seguimiento de pagos, notas de crédito y gestión de impuestos para múltiples jurisdicciones.
 
-## Objectives
-- Invoice generation (from orders and manual)
-- Payment recording (full and partial)
-- Credit notes for returns
-- Multi-jurisdiction tax support
-- Payment reconciliation
-- Recurring invoices (subscriptions)
+## Objetivos
+- Generación de facturas (desde pedidos y manual)
+- Registro de pagos (totales y parciales)
+- Notas de crédito para devoluciones
+- Soporte de impuestos de múltiples jurisdicciones
+- Reconciliación de pagos
+- Facturas recurrentes (suscripciones)
 
-## Acceptance Criteria
-- [ ] Auto-generate invoice from delivered order
-- [ ] Create manual invoices (without order)
-- [ ] Record payments (full and partial)
-- [ ] Invoice status: draft → sent → paid/overdue/cancelled
-- [ ] Credit notes reduce invoice balance
-- [ ] Tax calculation per line (supports multiple tax rates)
-- [ ] Overdue invoice detection and notifications
-- [ ] Recurring invoice generation (weekly/monthly/yearly)
-- [ ] Invoice PDF generation
-- [ ] Invoice numbering auto-generated per company
+## Criterios de Aprobación
+- [ ] Auto-generar factura desde un pedido entregado
+- [ ] Crear facturas manuales (sin pedido)
+- [ ] Registrar pagos (totales y parciales)
+- [ ] Estado de la factura: borrador → enviada → pagada/atrasada/cancelada
+- [ ] Las notas de crédito reducen el saldo de la factura
+- [ ] Cálculo de impuestos por línea (soporta múltiples tasas de impuestos)
+- [ ] Detección y notificaciones de facturas atrasadas
+- [ ] Generación de facturas recurrentes (semanal/mensual/anual)
+- [ ] Generación de PDF de la factura
+- [ ] Numeración de facturas autogenerada por empresa
 
-## Epic Dependencies
+## Dependencias de la Épica
 EPIC-001, EPIC-004
 
-## Estimated Effort
+## Esfuerzo Estimado
 2-3 sprints

@@ -1,24 +1,24 @@
-# Sprint 04 — Sales & Orders
+# Sprint 04 — Ventas y Pedidos
 
 **Período**: Semana 7-8  
-**Objetivo**: Order lifecycle + CRM interactions
+**Objetivo**: Ciclo de vida del pedido + interacciones del CRM
 
 ## Tareas
-- [ ] Quotes CRUD
-- [ ] Orders CRUD
-- [ ] Order status machine (draft → confirmed → shipped → delivered → cancelled)
-- [ ] Stock reservation on order confirm
-- [ ] Stock release on order cancel
-- [ ] Discount management
-- [ ] CRM interactions (calls, emails, meetings, notes)
-- [ ] Order UI (creation wizard, detail with timeline)
-- [ ] Customer purchase history view
+- [ ] CRUD de Presupuestos
+- [ ] CRUD de Pedidos
+- [ ] Máquina de estados de pedidos (borrador → confirmado → enviado → entregado → cancelado)
+- [ ] Reserva de stock al confirmar el pedido
+- [ ] Liberación de stock al cancelar el pedido
+- [ ] Gestión de descuentos
+- [ ] Interacciones CRM (llamadas, correos electrónicos, reuniones, notas)
+- [ ] Interfaz de Pedidos (asistente de creación, detalle con línea de tiempo)
+- [ ] Vista del historial de compras del cliente
 
-## Dependencies
+## Dependencias
 Sprint 03
 
-## Definition of Done
-- [ ] Order ↔ Inventory event flow working
-- [ ] Order ↔ CRM event flow working
-- [ ] Discount approval workflow
-- [ ] Full UI for order management
+## Definición de Terminado
+- [ ] Flujo de eventos Pedido ↔ Inventario funcionando
+- [ ] Flujo de eventos Pedido ↔ CRM funcionando
+- [ ] Flujo de trabajo para aprobación de descuentos
+- [ ] Interfaz completa para la gestión de pedidos

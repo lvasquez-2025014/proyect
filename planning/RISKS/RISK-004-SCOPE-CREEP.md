@@ -1,23 +1,23 @@
-# RISK-004: Scope Creep
+# RISK-004: Corrupción del Alcance (Scope Creep)
 
-**Status**: Active
-**Probability**: High
-**Impact**: Medium
-**Category**: Process
+**Estado**: Activo
+**Probabilidad**: Alta
+**Impacto**: Medio
+**Categoría**: Proceso
 
-## Description
-Luxury ERP has many potential features. Without discipline, the project can grow beyond what's feasible for a solo developer, leading to unfinished modules and burnout.
+## Descripción
+Luxury ERP tiene muchas características potenciales. Sin disciplina, el proyecto puede crecer más allá de lo factible para un desarrollador en solitario, llevando a módulos inacabados y agotamiento.
 
-## Mitigation
-- Strict roadmap (docs/15-ROADMAP.md) with phased delivery
-- Backlog prioritized (planning/BACKLOG/backlog.md)
-- Every new feature must be justified against the vision (docs/00-PROJECT-VISION.md)
-- "Document first" rule: spec must exist before code
-- YAGNI principle: build what's needed now, not what might be needed later
-- Monthly roadmap review: descope before adding
+## Mitigación
+- Hoja de ruta estricta (docs/15-ROADMAP.md) con entrega en fases
+- Backlog priorizado (planning/BACKLOG/backlog.md)
+- Cada nueva característica debe justificarse frente a la visión (docs/00-PROJECT-VISION.md)
+- Regla de "documentar primero": la especificación debe existir antes que el código
+- Principio YAGNI: construir lo que se necesita ahora, no lo que se podría necesitar después
+- Revisión mensual de la hoja de ruta: reducir el alcance antes de añadir
 
-## Contingency
-If scope grows beyond capacity:
-1. Review roadmap and postpone non-critical features
-2. Focus on core modules (Inventory, Sales, Billing, CRM)
-3. Defer AI, integrations, and advanced features to later phases
+## Contingencia
+Si el alcance crece más allá de la capacidad:
+1. Revisar la hoja de ruta y posponer características no críticas
+2. Enfocarse en módulos principales (Inventario, Ventas, Facturación, CRM)
+3. Diferir IA, integraciones y características avanzadas para fases posteriores

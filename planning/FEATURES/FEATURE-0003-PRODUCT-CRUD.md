@@ -1,31 +1,31 @@
-# FEATURE-0003: Product CRUD
+# FEATURE-0003: CRUD de Producto
 
-**Status**: Pending
-**Priority**: High
-**Epic**: EPIC-002 (Inventory)
-**Estimate**: 5 days
+**Estado**: Pendiente
+**Prioridad**: Alta
+**Épica**: EPIC-002 (Inventario)
+**Estimación**: 5 días
 
-## Description
-Create, read, update, and soft-delete products. Full product catalog management.
+## Descripción
+Crear, leer, actualizar y eliminar (soft-delete) productos. Gestión completa del catálogo de productos.
 
-## Acceptance Criteria
-- [ ] Create product: SKU, name, description, price, cost, tax, category, brand, unit
-- [ ] Edit product: all fields editable
-- [ ] View product: detail page with all info
-- [ ] List products: paginated, sortable, filterable
-- [ ] Soft delete (deactivated products hidden from sales)
-- [ ] Product images (upload, reorder, set primary)
-- [ ] SKU uniqueness validation per company
-- [ ] Product search by SKU, name, barcode
+## Criterios de Aprobación
+- [ ] Crear producto: SKU, nombre, descripción, precio, costo, impuestos, categoría, marca, unidad
+- [ ] Editar producto: todos los campos editables
+- [ ] Ver producto: página de detalle con toda la información
+- [ ] Listar productos: paginado, ordenable, filtrable
+- [ ] Eliminación suave (soft delete): productos desactivados ocultos de las ventas
+- [ ] Imágenes de productos (subir, reordenar, establecer como principal)
+- [ ] Validación de unicidad de SKU por empresa
+- [ ] Búsqueda de productos por SKU, nombre, código de barras
 
-## API Endpoints
-- GET /api/v1/inventory/products (paginated, searchable)
+## Endpoints de la API
+- GET /api/v1/inventory/products (paginado, buscable)
 - GET /api/v1/inventory/products/{id}
 - POST /api/v1/inventory/products
 - PATCH /api/v1/inventory/products/{id}
 - DELETE /api/v1/inventory/products/{id} (soft delete)
 
 ## UI
-- Product list page with table, search, filters
-- Product form with sections: basic info, pricing, description
-- Image gallery component
+- Página de lista de productos con tabla, búsqueda, filtros
+- Formulario de producto con secciones: información básica, precios, descripción
+- Componente de galería de imágenes

@@ -1,34 +1,34 @@
-# EPIC-003: CRM (Customer Relationship Management)
+# EPIC-003: CRM (Gestión de Relaciones con los Clientes)
 
-**Status**: Pending
-**Priority**: High
-**Dependencies**: EPIC-001
+**Estado**: Pendiente
+**Prioridad**: Alta
+**Dependencias**: EPIC-001
 
-## Description
-Customer management with luxury clienteling features: VIP profiles, preferences, purchase history, interactions, and segmentation.
+## Descripción
+Gestión de clientes con características de "clienteling" de lujo: perfiles VIP, preferencias, historial de compras, interacciones y segmentación.
 
-## Objectives
-- Contact management (individual + organization)
-- Multi-address support (billing, shipping)
-- Interaction logging (calls, emails, meetings, notes, tasks)
-- VIP profiles with preferences (sizes, colors, materials, allergies)
-- Purchase history aggregated from Sales module
-- Dynamic customer segments
-- Customer search and merge
+## Objetivos
+- Gestión de contactos (individuo + organización)
+- Soporte de múltiples direcciones (facturación, envío)
+- Registro de interacciones (llamadas, correos electrónicos, reuniones, notas, tareas)
+- Perfiles VIP con preferencias (tallas, colores, materiales, alergias)
+- Historial de compras agregado del módulo de Ventas
+- Segmentos dinámicos de clientes
+- Búsqueda y fusión de clientes
 
-## Acceptance Criteria
-- [ ] Create/edit individual and organization contacts
-- [ ] Multiple addresses per contact with type (billing/shipping/both)
-- [ ] Log interactions with type, subject, description, direction
-- [ ] VIP preferences with customizable fields
-- [ ] Purchase history view (read from Sales events)
-- [ ] Dynamic segments based on rules (spend, frequency, location)
-- [ ] Merge duplicate contacts (all related data transferred)
-- [ ] Search by name, email, phone, company
-- [ ] Assign contact to sales associate
+## Criterios de Aprobación
+- [ ] Crear/editar contactos individuales y de organización
+- [ ] Múltiples direcciones por contacto con tipo (facturación/envío/ambos)
+- [ ] Registrar interacciones con tipo, asunto, descripción, dirección
+- [ ] Preferencias VIP con campos personalizables
+- [ ] Vista del historial de compras (leído desde los eventos de Ventas)
+- [ ] Segmentos dinámicos basados en reglas (gasto, frecuencia, ubicación)
+- [ ] Fusionar contactos duplicados (todos los datos relacionados se transfieren)
+- [ ] Buscar por nombre, correo electrónico, teléfono, empresa
+- [ ] Asignar contacto a un asociado de ventas
 
-## Epic Dependencies
-EPIC-001, EPIC-004 (for purchase history via events)
+## Dependencias de la Épica
+EPIC-001, EPIC-004 (para el historial de compras a través de eventos)
 
-## Estimated Effort
+## Esfuerzo Estimado
 2-3 sprints
